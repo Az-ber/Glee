@@ -30,3 +30,11 @@ body{
     margin-left: 10px;
   }
 
+  .title{
+    @extend %dmsans-700;
+    font-size: 36px;
+    line-height: 100%;
+    color: $section-title;
+    text-align: center;
+  }
+
