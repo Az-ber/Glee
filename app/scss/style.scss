@@ -42,7 +42,7 @@
     display: flex;
     background-color: $header-bg;
     padding: 15px 20px;
-    border-radius: 35%;
+    border-radius: 35px;
     margin-right: 20px;
   }
   &__img1{
@@ -376,6 +376,10 @@
   padding: 25px 0;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+  &:hover{
+    transform: scale(1.1);
+    transition: all .5s;
+  }
   &:nth-child(3),
   &:nth-child(4){
     padding: 85px 0 0;
@@ -472,7 +476,202 @@
     background-image: url(../images/icons/arrow-right-black.svg);
     background-repeat: no-repeat;
     }
+    &:hover{
+      background-color: #fff;
+    }
   }
+}
+
+.design{
+  padding: 75px 0 80px;
+  &__title{
+    margin-bottom: 30px;
+  }
+}
+
+.design-filter{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+  &__btn{
+    border: none;
+    background-color: transparent;
+    padding: 5px 5px;
+    cursor: pointer;
+    margin: 0 20px;
+    &:hover{
+      opacity: .5;
+    }
+  }
+}
+
+.design-content{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.design-item{
+  height: 246px;
+  width: 370px;
+  max-width: 100%;
+  position: relative;
+  &:hover{
+    transform: scale(1.1);
+    transition: all .5s;
+  }
+  &:nth-child(1){
+    background-image: url(../images/design/1.jpg);
+  }
+  &:nth-child(2){
+    background-image: url(../images/design/2.jpg);
+  }
+  &:nth-child(3){
+    background-image: url(../images/design/3.jpg);
+  }
+  &:nth-child(4){
+    background-image: url(../images/design/4.jpg);
+  }
+  &:nth-child(5){
+    background-image: url(../images/design/5.jpg);
+  }
+  &:nth-child(6){
+    background-image: url(../images/design/6.jpg);
+  }
+  &__title{
+    max-width: 180px;
+    font-size: 20px;
+    @extend %dmsans-700;
+    margin-bottom: 15px;
+    color: $section-title;
+    position: absolute;
+    left: 35px;
+    top: 35px;
+  }
+  &__model{
+    position: absolute;
+    left: 35px;
+    top: 100px;
+    & a{
+      color: $btn-bg;
+      @extend %dmsans-700;
+    }
+    & a:hover{
+      color: $header-inner;
+    }
+  }
+}
+
+.video{
+  background-image: url(../images/video-bg.jpg);
+  background-repeat: no-repeat;
+  height: 501px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__play:hover{
+    opacity: .6;
+  }
+}
+
+.rooms{
+  padding-top: 110px;
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+  }
+  &__content{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__bottom{
+    padding: 270px 100px 100px;
+    margin-bottom: -200px;
+    background-color: #fef7f0;
+    transform: translateY(-200px);
+    z-index: -1;
+  }
+  &__title{
+    font-size: 36px;
+    @extend %dmsans-700;
+    color: $section-title;
+    text-align: left;
+  }
+  &__more{
+    position: relative;
+    @extend %dmsans-700;
+    color: $section-title;
+    &::after{
+      content: '';
+      position: absolute;
+      background-image: url(../images/icons/rooms-arrow.svg);
+      width: 6px;
+      height: 11px;
+      right: -20px;
+      top: 10px;
+    }
+    &:hover{
+      opacity: .6;
+    }
+  }
+}
+
+.rooms-item{
+  background-color: #fff;
+  max-width: 370px;
+  position: relative;
+  box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+  z-index: 2;
+  &:hover{
+    transform: scale(1.1);
+    transition: all .5s;
+  }
+  &__img{
+    margin-bottom: 30px;
+  }
+  &__link{
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    padding: 5px 30px;
+    background-color: $btn-bg;
+    border-radius: 30px;
+    position: absolute;
+    top: 235px;
+    left: 25px;
+    &:hover{
+      opacity: .8;
+    }
+  }
+  &__text{
+    font-size: 18px;
+    color: $section-title;
+    @extend %dmsans-700;
+    padding-bottom: 20px;
+    margin-left: 15px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  &__add{
+    display: flex;
+    margin: 0 15px;
+    padding: 10px 0;
+  }
+  &__data,
+  &__by{
+    color: $section-title;
+    font-size: 12px;
+    line-height: 30px;
+    @extend %dmsans-700;
+  }
+  &__data{
+    margin-right: 25px;
+  }
+}
+
+.rooms-partners{
+  display: flex;
+  justify-content: space-around;
 }
 
 

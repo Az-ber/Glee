@@ -8,4 +8,5 @@ $(function () {
   });
 
   var mixer = mixitup('.products-content');
+  var mixer = mixitup('.design-content');
 });
