@@ -709,6 +709,94 @@
   justify-content: space-around;
 }
 
+.login{
+  padding: 90px 0 120px;
+}
+
+.login-form{
+  display: block;
+  margin: 0 auto;
+  max-width: 475px;
+  text-align: center;
+  &__label{
+    display: block;
+    width: 100%;
+    color: $header-inner;
+    @extend %rubik-400;
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  &__input{
+    display: block;
+    width: 100%;
+    border: 1px solid $btn-bg;
+    padding: 10px;
+    &:hover{
+      opacity: .5;
+    }
+  }
+  &__btn{
+    display: block;
+    width: 100%;
+    margin: 30px 0;
+    padding: 20px 0;
+    border: none;
+    background-color: $btn-bg;
+    color: #fff;
+    font-size: 18px;
+    @extend %rubik-500;
+    cursor: pointer;
+    transition: all .4s;
+    &:hover{
+      background-color: $header-inner;
+    }
+  }
+  &__memory{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid $btn-bg;
+  }
+  &__remember,
+  &__lost{
+    color: $header-inner;
+    @extend %rubik-400;
+    font-size: 14px;
+  }
+  &__lost{
+    text-decoration: none;
+    &:hover{
+      opacity: .6;
+    }
+  }
+  &__text{
+    color: $header-inner;
+    @extend %rubik-400;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  &__register{
+    display: block;
+    padding: 20px 0;
+    border: 1px solid $btn-bg;
+    color: $header-inner;
+    font-size: 18px;
+    @extend %rubik-500;
+    transition: all .4s;
+    &:hover{
+      background-color: $header-inner;
+      color: #fff;
+    }
+  }
+}
+
+.rooms__bottom-page{
+  padding: 100px;
+  background-color: #fef7f0;
+}
 
 
 
