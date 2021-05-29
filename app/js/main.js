@@ -14,7 +14,7 @@ $(function () {
   });
 
   $(".star").rateYo({
-    starWidth: "12px",
+    starWidth: "14px",
     normalFill: "#d6d6d6",
     ratedFill: "#ffcc00",
     readOnly: true,
